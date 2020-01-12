@@ -1,0 +1,418 @@
+@font-face {
+    font-family: "HKConcentrateMedium";
+    src: url(fonts/HKConcentrate/HKConcentrate-Medium.ttf);
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family: "HKConcentrateLight";
+    src: url(/fonts//HKConcentrate/HKConcentrate-Light.ttf);
+    font-weight: normal;
+}
+
+:root {
+    --primary-highlight: #2fe0c5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "HKConcentrateLight";
+    color: #444;
+}
+
+#bold {
+    font-family: "HKConcentrateMedium";
+}
+
+#highlight {
+    color: var(--primary-highlight);
+}
+
+/* Nav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#navbarToggle {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+/* Landing */
+.header-container h2 {
+    font-size: 2.5rem;
+    line-height: 70px;
+}
+
+.header-container h4 {
+    font-size: 1.2rem;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header-container {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: 200px;
+}
+
+.header-container h2:nth-child(2) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.header-container h4 {
+    margin-bottom: 50px;
+}
+
+/* Information */
+.information {
+    height: 100vh;
+    width: 100%;
+}
+
+.background {
+    max-width: 600px;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.background h5 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: var(--primary-highlight);
+    font-family: HKConcentrateMedium;
+}
+
+.background p {
+    margin: 0 10%;
+    line-height: 35px;
+}
+
+.background-text p:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-text {
+    text-transform: uppercase;
+    color: var(--primary-highlight);
+    font-family: HKConcentrateMedium;
+}
+
+.skills h5 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: var(--primary-highlight);
+    font-family: HKConcentrateMedium;
+}
+
+.skills {
+    max-width: 600px;
+    margin: 0 10%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.languages,
+.tools {
+    margin-bottom: 50px;
+}
+
+.languages,
+.tools {
+    margin-right: 40px;
+}
+
+.languages li,
+.frameworks li,
+.tools li,
+.design li {
+    list-style-type: none;
+}
+
+.languages ul,
+.frameworks ul,
+.tools ul,
+.design ul {
+    margin-bottom: 10px;
+}
+
+.languages h6,
+.frameworks h6,
+.tools h6,
+.design h6 {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Portfolio */
+.portfolio {
+    width: 100%;
+    margin-top: 1000px;
+}
+
+.portfolio-title {
+    color: var(--primary-highlight);
+    text-transform: uppercase;
+    font-family: HKConcentrateMedium;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.project img {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.project a {
+    margin: 0 auto;
+    width: auto;
+    height:auto;
+}
+
+.project-text {
+    width: 200px;
+    margin-top: 50px;
+}
+
+.project-text h3 {
+    margin-bottom: 10px;
+}
+
+.other-projects-title h5 {
+    color: var(--primary-highlight);
+    text-transform: uppercase;
+    font-family: HKConcentrateMedium;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.other-project {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.other-project h5 {
+    margin-bottom: 20px;
+}
+
+.other-project a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    transition: 0.2s;
+}
+
+.other-project a:hover {
+    color: var(--primary-highlight);
+}
+
+.other-project-icon {
+    font-size: 3rem;
+    margin-top: 30px;
+    color: var(--primary-highlight);
+}
+
+.other-project-icon i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.other-project-icon i:hover {
+    color: #444;
+}
+
+/* Footer */
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 200px;
+}
+
+.footer-text h4 {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: var(--primary-highlight);
+    transition: 0.2s;
+}
+
+.footer-text a:hover {
+    color: #444;
+}
+
+/* Media */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .background {
+        margin: 0 auto;
+        margin-bottom: 100px;
+        flex-direction: row;
+    }
+
+    .background h5 {
+        padding-top: 8px;
+    }
+
+    .background-text p {
+        margin-top: 0;
+    }
+
+    .skills {
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .skills h5 {
+        margin-right: 70px;
+    }
+
+    .frameworks {
+        margin-right: 40px;
+    }
+
+    .portfolio {
+        margin: 0 auto;
+        margin-top: 500px;
+    }
+
+    .project {
+        flex-direction: row;
+        width: 700px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .project-text {
+        margin-top: 0;
+    }
+
+    .project img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .project {
+        text-align: left;
+    }
+
+    .other-project {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header-container {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+
+    .header-container h2 {
+        line-height: 50px;
+    }
+
+    .header-container h2:nth-child(2) {
+        font-size: 1.8rem;
+    }
+}
